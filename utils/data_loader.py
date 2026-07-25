@@ -1,26 +1,23 @@
 import json
-import os
-
-from utils.kobo_sync import sync_kobo
 
 
 def load_membership_data():
-
-    if not os.path.exists("data/membership.json"):
-        print("Membership JSON not found...")
-        print("Running Kobo Sync...")
-        sync_kobo()
+    print("Loading membership data...")
 
     with open("data/membership.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+        membership = json.load(f)
+
+    print("Membership loaded!")
+
+    return membership
 
 
 def load_savings_data():
-
-    if not os.path.exists("data/savings.json"):
-        print("Savings JSON not found...")
-        print("Running Kobo Sync...")
-        sync_kobo()
+    print("Loading savings data...")
 
     with open("data/savings.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+        savings = json.load(f)
+
+    print("Savings loaded!")
+
+    return savings
