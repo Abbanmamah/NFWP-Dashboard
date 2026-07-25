@@ -1,0 +1,11 @@
+.env
+
+__pycache__/
+*.pyc
+
+.streamlit/
+
+.vscode/
+
+data/*.json
+!data/last_sync.json
