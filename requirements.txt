@@ -1,6 +1,7 @@
 streamlit
 pandas
-openpyxl
+plotly
 requests
 python-dotenv
+openpyxl
 xlsxwriter
